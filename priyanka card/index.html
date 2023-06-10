@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-image: url(images/background.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-box {
+            background-color: darkgoldenrod;
+            text-align: center;
+            padding: 40px 50px;
+            color: #fff;
+            position: relative;
+            border-radius: 20px;
+        }
+
+        .menu-icon {
+            width: 25px;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+        }
+
+        .setting-icon {
+            width: 25px;
+            position: absolute;
+            right: 40px;
+            top: 40px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            border-radius: 50%;
+            background: #fff;
+            padding: 6px;
+            margin-top: 40px;
+        }
+
+        .profile-box button {
+            background: #fff;
+            color: #2b0bdf;
+            border: none;
+            outline: none;
+            box-shadow: 0 5px 10px rgba(220, 52, 40, 0.5);
+            padding: 15px 60px;
+            cursor: pointer;
+            border-radius: 30px;
+            margin-bottom: -50px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all .3s ease-in;
+        }
+        .profile-box button:hover{
+            background: transparent;
+            color: #2c2cf3;
+            border: 2px solid #f3392c;
+        }
+
+        .profile-box h3 {
+            font-size: 22px;
+            margin-top: 20px;
+            font-weight: 500;
+            color: #0715de;
+        }
+
+        .social-media img {
+            width: 20px;
+            margin: 30px 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-box">
+            <img src="images/menu.png" class="menu-icon">
+            <img src="images/setting.png" class="setting-icon">
+            <img src="images/profile.png" class="profile-pic">
+            <h3>Priyanka Kumari</h3>
+            <p>Persuing Btech in Electronics from<br>Narula Institute of Technology,Kolkata </p>
+            <div class="social-media">
+                <img src="images/instagram.png" alt="instagram">
+                <img src="images/telegram.png" alt="telegram">
+                <img src="images/dribble.png" alt="dribble">
+            </div>
+            <button type="button">Hover me</button>
+        </div>
+    </div>
+</body>
+
+</html>
