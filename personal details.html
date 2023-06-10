@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(https://tse2.mm.bing.net/th?id=OIP.i6nMp45KJ3fcmVjygIethwHaEo&pid=Api&P=0&h=180);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+div.main{
+    width: 400px;
+    margin: 100px auto 0px auto;
+}
+h2,h3{
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+div.form{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 520px;
+    padding: 50px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid red;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    color: black;
+}
+form#main{
+    margin: 30px;
+    width: 100%;
+}
+textarea{
+    resize: none;
+}
+#btn{
+    width: 50%;
+    padding: 8px;
+    margin-left: 80px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: blue;
+    border: 1px solid red;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="form">
+            <h1> made by priyanka kumari</h1>
+            <h2>Personal Details</h2>
+            <form id="main">
+
+                <label> Name :</label>
+                <input type="text" name="name" size="20" /> <br> <br>
+                <label> Password :</label>
+                <input type="text" name="password" size="20" /> <br> <br>
+                <label> E-mail id :</label>
+                <input type="text" name="email" size="20" />
+                <br>
+                <br>
+                <label>Gender :</label>
+                <input type="radio" name="male" /> Male
+                <input type="radio" name="female" /> Female
+                <br>
+                <br>
+                <label>Contact :</label>
+                <input type="text" name="country code" value="+91" size="2" />
+                <input type="text" name="phone" size="10" /> <br>
+                <h2>Educational Qualification</h2>
+                Degree: <select>
+                    <option>--Select Group--</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                    <option>BBA</option>
+                    <option>MBA</option>
+                    <option>Btech</option>
+                    <option>Mtech</option>
+                    <option>MA</option>
+                    <option>BA</option>
+                    <option>DIPLOMA</option>
+                    <option>12TH</option>
+                    <option>10TH</option>
+                </select><br><br>
+                Engineering: <select>
+                    <option>--Select Group--</option>
+                    <option>Electronic</option>
+                    <option>Mechanical</option>
+                    <option>Software</option>
+                    <option>helter squad</option>
+                    <option>mustang Engineering</option>
+                    <option>titan techies</option>
+                </select><br><br>
+                <label> hobbie :</label>
+                <input type="text" name="name" size="20"> <br> <br>
+                
+               
+                <label>Attach Resume :</label>
+                <input type="file" id="myFile" name="filename"><br><br>
+                <input type="button" value="Submit" id="btn" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
